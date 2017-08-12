@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */; };
+		B6EBDE641F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE351F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m */; };
+		B6EBDE651F3F5E5C003A2F0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE371F3F5E5C003A2F0D /* AppDelegate.m */; };
+		B6EBDE661F3F5E5C003A2F0D /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE3A1F3F5E5C003A2F0D /* NSDate+Extension.m */; };
+		B6EBDE671F3F5E5C003A2F0D /* NSString+CYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE3C1F3F5E5C003A2F0D /* NSString+CYExtension.m */; };
+		B6EBDE681F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE3E1F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m */; };
+		B6EBDE691F3F5E5C003A2F0D /* UIImage+CYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE401F3F5E5C003A2F0D /* UIImage+CYExtension.m */; };
+		B6EBDE6A1F3F5E5C003A2F0D /* UIView+CYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE421F3F5E5C003A2F0D /* UIView+CYExtension.m */; };
+		B6EBDE6B1F3F5E5C003A2F0D /* CYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE451F3F5E5C003A2F0D /* CYNavigationController.m */; };
+		B6EBDE6C1F3F5E5C003A2F0D /* CYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE471F3F5E5C003A2F0D /* CYViewController.m */; };
+		B6EBDE6D1F3F5E5C003A2F0D /* ZXPUnicode.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE4B1F3F5E5C003A2F0D /* ZXPUnicode.m */; };
+		B6EBDE6F1F3F5E5C003A2F0D /* CYTableViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE531F3F5E5C003A2F0D /* CYTableViewItem.m */; };
+		B6EBDE701F3F5E5C003A2F0D /* CYTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE551F3F5E5C003A2F0D /* CYTableViewSection.m */; };
+		B6EBDE721F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE5B1F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.m */; };
+		B6EBDE731F3F5E5C003A2F0D /* CYTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE5E1F3F5E5C003A2F0D /* CYTextView.m */; };
 		B6F6B44C1F3E19D400513BBF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6B44B1F3E19D400513BBF /* main.m */; };
-		B6F6B44F1F3E19D400513BBF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6B44E1F3E19D400513BBF /* AppDelegate.m */; };
-		B6F6B4521F3E19D400513BBF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6B4511F3E19D400513BBF /* ViewController.m */; };
-		B6F6B4551F3E19D400513BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F6B4531F3E19D400513BBF /* Main.storyboard */; };
 		B6F6B4571F3E19D400513BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6F6B4561F3E19D400513BBF /* Assets.xcassets */; };
 		B6F6B45A1F3E19D400513BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6F6B4581F3E19D400513BBF /* LaunchScreen.storyboard */; };
 		B6F6B4651F3E19D500513BBF /* OKCameraTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6B4641F3E19D500513BBF /* OKCameraTests.m */; };
 		B6F6B4701F3E19D500513BBF /* OKCameraUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F6B46F1F3E19D500513BBF /* OKCameraUITests.m */; };
+		CE066188E965ED8E983E8C9C /* libPods-OKCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 27BB163B24E9E265D1AD0DB4 /* libPods-OKCamera.a */; };
+		F4BD0460712068F11E8DB727 /* libPods-OKCameraTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +49,46 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15D29729802A70F5D7122F42 /* Pods-OKCameraTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraTests/Pods-OKCameraTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CC18C535FEFDB4480F8337F /* Pods-OKCameraUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FE70407D4E3D734D0520B0E /* Pods-OKCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		27BB163B24E9E265D1AD0DB4 /* libPods-OKCamera.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCamera.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.release.xcconfig"; sourceTree = "<group>"; };
+		950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
+		ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6EBDE341F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CYLaunchAnimation.h"; sourceTree = "<group>"; };
+		B6EBDE351F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CYLaunchAnimation.m"; sourceTree = "<group>"; };
+		B6EBDE361F3F5E5C003A2F0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6EBDE371F3F5E5C003A2F0D /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6EBDE391F3F5E5C003A2F0D /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
+		B6EBDE3A1F3F5E5C003A2F0D /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
+		B6EBDE3B1F3F5E5C003A2F0D /* NSString+CYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+CYExtension.h"; sourceTree = "<group>"; };
+		B6EBDE3C1F3F5E5C003A2F0D /* NSString+CYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+CYExtension.m"; sourceTree = "<group>"; };
+		B6EBDE3D1F3F5E5C003A2F0D /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		B6EBDE3E1F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		B6EBDE3F1F3F5E5C003A2F0D /* UIImage+CYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CYExtension.h"; sourceTree = "<group>"; };
+		B6EBDE401F3F5E5C003A2F0D /* UIImage+CYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CYExtension.m"; sourceTree = "<group>"; };
+		B6EBDE411F3F5E5C003A2F0D /* UIView+CYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CYExtension.h"; sourceTree = "<group>"; };
+		B6EBDE421F3F5E5C003A2F0D /* UIView+CYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CYExtension.m"; sourceTree = "<group>"; };
+		B6EBDE441F3F5E5C003A2F0D /* CYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYNavigationController.h; sourceTree = "<group>"; };
+		B6EBDE451F3F5E5C003A2F0D /* CYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYNavigationController.m; sourceTree = "<group>"; };
+		B6EBDE461F3F5E5C003A2F0D /* CYViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYViewController.h; sourceTree = "<group>"; };
+		B6EBDE471F3F5E5C003A2F0D /* CYViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYViewController.m; sourceTree = "<group>"; };
+		B6EBDE4A1F3F5E5C003A2F0D /* ZXPUnicode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXPUnicode.h; sourceTree = "<group>"; };
+		B6EBDE4B1F3F5E5C003A2F0D /* ZXPUnicode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXPUnicode.m; sourceTree = "<group>"; };
+		B6EBDE4D1F3F5E5C003A2F0D /* CYSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSingleton.h; sourceTree = "<group>"; };
+		B6EBDE4E1F3F5E5C003A2F0D /* iPhoneMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneMacro.h; sourceTree = "<group>"; };
+		B6EBDE521F3F5E5C003A2F0D /* CYTableViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTableViewItem.h; sourceTree = "<group>"; };
+		B6EBDE531F3F5E5C003A2F0D /* CYTableViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTableViewItem.m; sourceTree = "<group>"; };
+		B6EBDE541F3F5E5C003A2F0D /* CYTableViewSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTableViewSection.h; sourceTree = "<group>"; };
+		B6EBDE551F3F5E5C003A2F0D /* CYTableViewSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTableViewSection.m; sourceTree = "<group>"; };
+		B6EBDE5A1F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYGPUStillImageFilterTool.h; sourceTree = "<group>"; };
+		B6EBDE5B1F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYGPUStillImageFilterTool.m; sourceTree = "<group>"; };
+		B6EBDE5D1F3F5E5C003A2F0D /* CYTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYTextView.h; sourceTree = "<group>"; };
+		B6EBDE5E1F3F5E5C003A2F0D /* CYTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYTextView.m; sourceTree = "<group>"; };
 		B6F6B4471F3E19D400513BBF /* OKCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OKCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F6B44B1F3E19D400513BBF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B6F6B44D1F3E19D400513BBF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		B6F6B44E1F3E19D400513BBF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B6F6B4501F3E19D400513BBF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B6F6B4511F3E19D400513BBF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B6F6B4541F3E19D400513BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B6F6B4561F3E19D400513BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6F6B4591F3E19D400513BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6F6B45B1F3E19D400513BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -51,6 +98,7 @@
 		B6F6B46B1F3E19D500513BBF /* OKCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OKCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6F6B46F1F3E19D500513BBF /* OKCameraUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OKCameraUITests.m; sourceTree = "<group>"; };
 		B6F6B4711F3E19D500513BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0628862B188A5F8AA138471 /* Pods-OKCameraTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraTests/Pods-OKCameraTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE066188E965ED8E983E8C9C /* libPods-OKCamera.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4BD0460712068F11E8DB727 /* libPods-OKCameraTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +122,233 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4BDE7E2ADBD9F6F58834AD69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FE70407D4E3D734D0520B0E /* Pods-OKCamera.debug.xcconfig */,
+				652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */,
+				C0628862B188A5F8AA138471 /* Pods-OKCameraTests.debug.xcconfig */,
+				15D29729802A70F5D7122F42 /* Pods-OKCameraTests.release.xcconfig */,
+				1CC18C535FEFDB4480F8337F /* Pods-OKCameraUITests.debug.xcconfig */,
+				950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AAEDC741E4F076506BA4A581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27BB163B24E9E265D1AD0DB4 /* libPods-OKCamera.a */,
+				ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */,
+				3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6EBDE2D1F3F5E5C003A2F0D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE321F3F5E5C003A2F0D /* Main */,
+				B6EBDE2E1F3F5E5C003A2F0D /* Home */,
+				B6EBDE5F1F3F5E5C003A2F0D /* Mine */,
+				B6EBDE621F3F5E5C003A2F0D /* Setting */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B6EBDE2E1F3F5E5C003A2F0D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE2F1F3F5E5C003A2F0D /* Controller */,
+				B6EBDE301F3F5E5C003A2F0D /* Model */,
+				B6EBDE311F3F5E5C003A2F0D /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B6EBDE2F1F3F5E5C003A2F0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6EBDE301F3F5E5C003A2F0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6EBDE311F3F5E5C003A2F0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6EBDE321F3F5E5C003A2F0D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE331F3F5E5C003A2F0D /* APPDelegate */,
+				B6EBDE381F3F5E5C003A2F0D /* Category */,
+				B6EBDE431F3F5E5C003A2F0D /* Controller */,
+				B6EBDE481F3F5E5C003A2F0D /* Lib */,
+				B6EBDE4C1F3F5E5C003A2F0D /* Macro */,
+				B6EBDE4F1F3F5E5C003A2F0D /* Model */,
+				B6EBDE561F3F5E5C003A2F0D /* Tool */,
+				B6EBDE5C1F3F5E5C003A2F0D /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B6EBDE331F3F5E5C003A2F0D /* APPDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE361F3F5E5C003A2F0D /* AppDelegate.h */,
+				B6EBDE371F3F5E5C003A2F0D /* AppDelegate.m */,
+				B6EBDE341F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.h */,
+				B6EBDE351F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m */,
+			);
+			path = APPDelegate;
+			sourceTree = "<group>";
+		};
+		B6EBDE381F3F5E5C003A2F0D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE391F3F5E5C003A2F0D /* NSDate+Extension.h */,
+				B6EBDE3A1F3F5E5C003A2F0D /* NSDate+Extension.m */,
+				B6EBDE3B1F3F5E5C003A2F0D /* NSString+CYExtension.h */,
+				B6EBDE3C1F3F5E5C003A2F0D /* NSString+CYExtension.m */,
+				B6EBDE3D1F3F5E5C003A2F0D /* UIBarButtonItem+Extension.h */,
+				B6EBDE3E1F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m */,
+				B6EBDE3F1F3F5E5C003A2F0D /* UIImage+CYExtension.h */,
+				B6EBDE401F3F5E5C003A2F0D /* UIImage+CYExtension.m */,
+				B6EBDE411F3F5E5C003A2F0D /* UIView+CYExtension.h */,
+				B6EBDE421F3F5E5C003A2F0D /* UIView+CYExtension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		B6EBDE431F3F5E5C003A2F0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE441F3F5E5C003A2F0D /* CYNavigationController.h */,
+				B6EBDE451F3F5E5C003A2F0D /* CYNavigationController.m */,
+				B6EBDE461F3F5E5C003A2F0D /* CYViewController.h */,
+				B6EBDE471F3F5E5C003A2F0D /* CYViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6EBDE481F3F5E5C003A2F0D /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE491F3F5E5C003A2F0D /* ZXPUnicode */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		B6EBDE491F3F5E5C003A2F0D /* ZXPUnicode */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE4A1F3F5E5C003A2F0D /* ZXPUnicode.h */,
+				B6EBDE4B1F3F5E5C003A2F0D /* ZXPUnicode.m */,
+			);
+			path = ZXPUnicode;
+			sourceTree = "<group>";
+		};
+		B6EBDE4C1F3F5E5C003A2F0D /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE4D1F3F5E5C003A2F0D /* CYSingleton.h */,
+				B6EBDE4E1F3F5E5C003A2F0D /* iPhoneMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		B6EBDE4F1F3F5E5C003A2F0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE521F3F5E5C003A2F0D /* CYTableViewItem.h */,
+				B6EBDE531F3F5E5C003A2F0D /* CYTableViewItem.m */,
+				B6EBDE541F3F5E5C003A2F0D /* CYTableViewSection.h */,
+				B6EBDE551F3F5E5C003A2F0D /* CYTableViewSection.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6EBDE561F3F5E5C003A2F0D /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE591F3F5E5C003A2F0D /* CYGPUStillImageFilterTool */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B6EBDE591F3F5E5C003A2F0D /* CYGPUStillImageFilterTool */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE5A1F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.h */,
+				B6EBDE5B1F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.m */,
+			);
+			path = CYGPUStillImageFilterTool;
+			sourceTree = "<group>";
+		};
+		B6EBDE5C1F3F5E5C003A2F0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE5D1F3F5E5C003A2F0D /* CYTextView.h */,
+				B6EBDE5E1F3F5E5C003A2F0D /* CYTextView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6EBDE5F1F3F5E5C003A2F0D /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE601F3F5E5C003A2F0D /* Controller */,
+				B6EBDE611F3F5E5C003A2F0D /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		B6EBDE601F3F5E5C003A2F0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B6EBDE611F3F5E5C003A2F0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B6EBDE621F3F5E5C003A2F0D /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B6EBDE631F3F5E5C003A2F0D /* Controller */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B6EBDE631F3F5E5C003A2F0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		B6F6B43E1F3E19D400513BBF = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +356,8 @@
 				B6F6B4631F3E19D500513BBF /* OKCameraTests */,
 				B6F6B46E1F3E19D500513BBF /* OKCameraUITests */,
 				B6F6B4481F3E19D400513BBF /* Products */,
+				4BDE7E2ADBD9F6F58834AD69 /* Pods */,
+				AAEDC741E4F076506BA4A581 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +374,7 @@
 		B6F6B4491F3E19D400513BBF /* OKCamera */ = {
 			isa = PBXGroup;
 			children = (
-				B6F6B44D1F3E19D400513BBF /* AppDelegate.h */,
-				B6F6B44E1F3E19D400513BBF /* AppDelegate.m */,
-				B6F6B4501F3E19D400513BBF /* ViewController.h */,
-				B6F6B4511F3E19D400513BBF /* ViewController.m */,
-				B6F6B4531F3E19D400513BBF /* Main.storyboard */,
-				B6F6B4561F3E19D400513BBF /* Assets.xcassets */,
-				B6F6B4581F3E19D400513BBF /* LaunchScreen.storyboard */,
-				B6F6B45B1F3E19D400513BBF /* Info.plist */,
+				B6EBDE2D1F3F5E5C003A2F0D /* Classes */,
 				B6F6B44A1F3E19D400513BBF /* Supporting Files */,
 			);
 			path = OKCamera;
@@ -117,6 +383,9 @@
 		B6F6B44A1F3E19D400513BBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B6F6B4561F3E19D400513BBF /* Assets.xcassets */,
+				B6F6B4581F3E19D400513BBF /* LaunchScreen.storyboard */,
+				B6F6B45B1F3E19D400513BBF /* Info.plist */,
 				B6F6B44B1F3E19D400513BBF /* main.m */,
 			);
 			name = "Supporting Files";
@@ -147,9 +416,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F6B4741F3E19D500513BBF /* Build configuration list for PBXNativeTarget "OKCamera" */;
 			buildPhases = (
+				E5028AD81122C1F16F2D86F7 /* [CP] Check Pods Manifest.lock */,
 				B6F6B4431F3E19D400513BBF /* Sources */,
 				B6F6B4441F3E19D400513BBF /* Frameworks */,
 				B6F6B4451F3E19D400513BBF /* Resources */,
+				A8C70D7EBFF764F3745439C6 /* [CP] Embed Pods Frameworks */,
+				3B261D4C3D77996C5EF52F62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +436,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F6B4771F3E19D500513BBF /* Build configuration list for PBXNativeTarget "OKCameraTests" */;
 			buildPhases = (
+				B08E07F4F936DC8EF42ECD57 /* [CP] Check Pods Manifest.lock */,
 				B6F6B45C1F3E19D500513BBF /* Sources */,
 				B6F6B45D1F3E19D500513BBF /* Frameworks */,
 				B6F6B45E1F3E19D500513BBF /* Resources */,
+				73D26BE8B37B37204C5AADBA /* [CP] Embed Pods Frameworks */,
+				1F6F51342492911A614D0448 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +457,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6F6B47A1F3E19D500513BBF /* Build configuration list for PBXNativeTarget "OKCameraUITests" */;
 			buildPhases = (
+				DB7C8CB5F49B868B774A7EA7 /* [CP] Check Pods Manifest.lock */,
 				B6F6B4671F3E19D500513BBF /* Sources */,
 				B6F6B4681F3E19D500513BBF /* Frameworks */,
 				B6F6B4691F3E19D500513BBF /* Resources */,
+				811C0269B0CDBE7EC59CB7F3 /* [CP] Embed Pods Frameworks */,
+				5BE3CE872D9F5EA5633302F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,7 +529,6 @@
 			files = (
 				B6F6B45A1F3E19D400513BBF /* LaunchScreen.storyboard in Resources */,
 				B6F6B4571F3E19D400513BBF /* Assets.xcassets in Resources */,
-				B6F6B4551F3E19D400513BBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,14 +548,164 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F6F51342492911A614D0448 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCameraTests/Pods-OKCameraTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B261D4C3D77996C5EF52F62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BE3CE872D9F5EA5633302F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73D26BE8B37B37204C5AADBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCameraTests/Pods-OKCameraTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		811C0269B0CDBE7EC59CB7F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8C70D7EBFF764F3745439C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B08E07F4F936DC8EF42ECD57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DB7C8CB5F49B868B774A7EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5028AD81122C1F16F2D86F7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6F6B4431F3E19D400513BBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6F6B4521F3E19D400513BBF /* ViewController.m in Sources */,
-				B6F6B44F1F3E19D400513BBF /* AppDelegate.m in Sources */,
+				B6EBDE6C1F3F5E5C003A2F0D /* CYViewController.m in Sources */,
+				B6EBDE6F1F3F5E5C003A2F0D /* CYTableViewItem.m in Sources */,
+				B6EBDE681F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m in Sources */,
+				B6EBDE661F3F5E5C003A2F0D /* NSDate+Extension.m in Sources */,
+				B6EBDE641F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m in Sources */,
 				B6F6B44C1F3E19D400513BBF /* main.m in Sources */,
+				B6EBDE731F3F5E5C003A2F0D /* CYTextView.m in Sources */,
+				B6EBDE6A1F3F5E5C003A2F0D /* UIView+CYExtension.m in Sources */,
+				B6EBDE701F3F5E5C003A2F0D /* CYTableViewSection.m in Sources */,
+				B6EBDE651F3F5E5C003A2F0D /* AppDelegate.m in Sources */,
+				B6EBDE6D1F3F5E5C003A2F0D /* ZXPUnicode.m in Sources */,
+				B6EBDE691F3F5E5C003A2F0D /* UIImage+CYExtension.m in Sources */,
+				B6EBDE721F3F5E5C003A2F0D /* CYGPUStillImageFilterTool.m in Sources */,
+				B6EBDE671F3F5E5C003A2F0D /* NSString+CYExtension.m in Sources */,
+				B6EBDE6B1F3F5E5C003A2F0D /* CYNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,14 +741,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B6F6B4531F3E19D400513BBF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B6F6B4541F3E19D400513BBF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B6F6B4581F3E19D400513BBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -425,6 +844,7 @@
 		};
 		B6F6B4751F3E19D500513BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FE70407D4E3D734D0520B0E /* Pods-OKCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U757H3R4AB;
@@ -437,6 +857,7 @@
 		};
 		B6F6B4761F3E19D500513BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = U757H3R4AB;
@@ -449,6 +870,7 @@
 		};
 		B6F6B4781F3E19D500513BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0628862B188A5F8AA138471 /* Pods-OKCameraTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = U757H3R4AB;
@@ -462,6 +884,7 @@
 		};
 		B6F6B4791F3E19D500513BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15D29729802A70F5D7122F42 /* Pods-OKCameraTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = U757H3R4AB;
@@ -475,6 +898,7 @@
 		};
 		B6F6B47B1F3E19D500513BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CC18C535FEFDB4480F8337F /* Pods-OKCameraUITests.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = U757H3R4AB;
 				INFOPLIST_FILE = OKCameraUITests/Info.plist;
@@ -487,6 +911,7 @@
 		};
 		B6F6B47C1F3E19D500513BBF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = U757H3R4AB;
 				INFOPLIST_FILE = OKCameraUITests/Info.plist;
@@ -516,6 +941,7 @@
 				B6F6B4761F3E19D500513BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6F6B4771F3E19D500513BBF /* Build configuration list for PBXNativeTarget "OKCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +950,7 @@
 				B6F6B4791F3E19D500513BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6F6B47A1F3E19D500513BBF /* Build configuration list for PBXNativeTarget "OKCameraUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +959,7 @@
 				B6F6B47C1F3E19D500513BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

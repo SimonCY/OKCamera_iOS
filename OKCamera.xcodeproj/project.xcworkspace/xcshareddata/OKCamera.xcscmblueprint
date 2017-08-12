@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78384D4F83BA7F7424A38A5D554D3CEEC7F1D1D0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78384D4F83BA7F7424A38A5D554D3CEEC7F1D1D0" : 9223372036854775807,
+    "9BD227ADB2B6A63BFB304404DC9B9A3AD7D79E36" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A6D86935-3C49-4B5D-B4F5-ECA1CF911655",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78384D4F83BA7F7424A38A5D554D3CEEC7F1D1D0" : "OKCamera_iOS\/",
+    "9BD227ADB2B6A63BFB304404DC9B9A3AD7D79E36" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "OKCamera",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "OKCamera.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/SimonCY\/OKCamera_iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78384D4F83BA7F7424A38A5D554D3CEEC7F1D1D0"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:SimonCY\/MakeVideoTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9BD227ADB2B6A63BFB304404DC9B9A3AD7D79E36"
+    }
+  ]
+}
