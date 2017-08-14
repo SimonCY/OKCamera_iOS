@@ -32,11 +32,11 @@
 #define cy_STRONGSELF __strong __typeof(&*self) strongSelf = weakSelf;
 
 //color
-#define RGBAColor(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define RGBColor(r, g, b)  RGBAColor(r, g, b, 1)
+#define cy_RGBAColor(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define cy_RGBColor(r, g, b)  cy_RGBAColor(r, g, b, 1)
 
 // 随机色
-#define cy_RandomColor RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
+#define cy_RandomColor cy_RGBColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
 // 十六进制转UIColor
 #define cy_ColorFromHex(hexValue) [UIColor \
@@ -45,7 +45,9 @@ green:((float)((hexValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 
 //APP中的颜色
-#define CommonYellow RGBColor(244,181,15)
+#define CommonPink cy_RGBColor(255,165,212)
+#define CommonWhite cy_RGBColor(238,243,233)
+#define Commonblue cy_RGBColor(117,207,248)
 
 //frame and size
 #define cy_SCREEN_BOUNDS    [[UIScreen mainScreen] bounds]

@@ -59,7 +59,7 @@
     [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     //disable
     NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
-    disableTextAttrs[NSForegroundColorAttributeName] = RGBColor(150, 150, 150);
+    disableTextAttrs[NSForegroundColorAttributeName] = cy_RGBColor(150, 150, 150);
     [appearance setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
     //highlighted
     //    NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
