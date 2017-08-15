@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */; };
+		B695C2F31F42DAE50057F861 /* CYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B695C2F21F42DAE50057F861 /* CYSettingViewController.m */; };
 		B6EBDE641F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE351F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m */; };
 		B6EBDE651F3F5E5C003A2F0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE371F3F5E5C003A2F0D /* AppDelegate.m */; };
 		B6EBDE661F3F5E5C003A2F0D /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = B6EBDE3A1F3F5E5C003A2F0D /* NSDate+Extension.m */; };
@@ -58,6 +59,8 @@
 		652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.release.xcconfig"; sourceTree = "<group>"; };
 		950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B695C2F11F42DAE50057F861 /* CYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSettingViewController.h; sourceTree = "<group>"; };
+		B695C2F21F42DAE50057F861 /* CYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSettingViewController.m; sourceTree = "<group>"; };
 		B6EBDE341F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+CYLaunchAnimation.h"; sourceTree = "<group>"; };
 		B6EBDE351F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+CYLaunchAnimation.m"; sourceTree = "<group>"; };
 		B6EBDE361F3F5E5C003A2F0D /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -155,13 +158,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B695C2EA1F429D000057F861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B695C2EE1F42DAD30057F861 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				B695C2EF1F42DAD30057F861 /* Controller */,
+				B695C2F01F42DAD30057F861 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		B695C2EF1F42DAD30057F861 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B695C2F11F42DAE50057F861 /* CYSettingViewController.h */,
+				B695C2F21F42DAE50057F861 /* CYSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B695C2F01F42DAD30057F861 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B6EBDE2D1F3F5E5C003A2F0D /* Classes */ = {
 			isa = PBXGroup;
 			children = (
 				B6EBDE321F3F5E5C003A2F0D /* Main */,
+				B695C2EE1F42DAD30057F861 /* Setting */,
 				B6EBDE2E1F3F5E5C003A2F0D /* Home */,
-				B6EBDE5F1F3F5E5C003A2F0D /* Mine */,
-				B6EBDE621F3F5E5C003A2F0D /* Setting */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -170,8 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				B6EBDE2F1F3F5E5C003A2F0D /* Controller */,
-				B6EBDE301F3F5E5C003A2F0D /* Model */,
-				B6EBDE311F3F5E5C003A2F0D /* View */,
+				B695C2EA1F429D000057F861 /* View */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -183,20 +216,6 @@
 				B6EBDE751F3F6056003A2F0D /* CYHomeViewController.m */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		B6EBDE301F3F5E5C003A2F0D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B6EBDE311F3F5E5C003A2F0D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		B6EBDE321F3F5E5C003A2F0D /* Main */ = {
@@ -314,44 +333,6 @@
 				B6EBDE5E1F3F5E5C003A2F0D /* CYTextView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		B6EBDE5F1F3F5E5C003A2F0D /* Mine */ = {
-			isa = PBXGroup;
-			children = (
-				B6EBDE601F3F5E5C003A2F0D /* Controller */,
-				B6EBDE611F3F5E5C003A2F0D /* View */,
-			);
-			path = Mine;
-			sourceTree = "<group>";
-		};
-		B6EBDE601F3F5E5C003A2F0D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B6EBDE611F3F5E5C003A2F0D /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		B6EBDE621F3F5E5C003A2F0D /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				B6EBDE631F3F5E5C003A2F0D /* Controller */,
-			);
-			path = Setting;
-			sourceTree = "<group>";
-		};
-		B6EBDE631F3F5E5C003A2F0D /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		B6F6B43E1F3E19D400513BBF = {
@@ -485,6 +466,7 @@
 		B6F6B43F1F3E19D400513BBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = CY;
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Chenyan;
 				TargetAttributes = {
@@ -700,6 +682,7 @@
 				B6EBDE6F1F3F5E5C003A2F0D /* CYTableViewItem.m in Sources */,
 				B6EBDE681F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m in Sources */,
 				B6EBDE661F3F5E5C003A2F0D /* NSDate+Extension.m in Sources */,
+				B695C2F31F42DAE50057F861 /* CYSettingViewController.m in Sources */,
 				B6EBDE641F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m in Sources */,
 				B6EBDE761F3F6056003A2F0D /* CYHomeViewController.m in Sources */,
 				B6F6B44C1F3E19D400513BBF /* main.m in Sources */,
