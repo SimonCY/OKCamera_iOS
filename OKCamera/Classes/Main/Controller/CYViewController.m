@@ -25,11 +25,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor whiteColor];
     
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setShouldRotateToLandscapeRight:(BOOL)shouldRotateToLandscapeRight {
+    
     _shouldRotateToLandscapeRight = shouldRotateToLandscapeRight;
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     appDelegate.shouldRotateToLandscapeRight = shouldRotateToLandscapeRight;

@@ -35,31 +35,42 @@
 }
 
 + (void)setupNavigationBarTheme {
-    
-    UINavigationBar *appearance = [UINavigationBar appearance];
+    //var
+    UIColor *textColor = [UIColor darkTextColor];
+    CGFloat textSize = 18;
+    BOOL isBold = YES;
+
     //title
+    UINavigationBar *appearance = [UINavigationBar appearance];
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor darkTextColor];
-    textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:18];
+    textAttrs[NSForegroundColorAttributeName] = textColor;
+    textAttrs[NSFontAttributeName] = isBold?[UIFont boldSystemFontOfSize:textSize]:[UIFont systemFontOfSize:textSize];
     [appearance setTitleTextAttributes:textAttrs];
+    //系统返回按钮颜色
+    [appearance setTintColor:textColor];
     //navBar backgroundimage
     //设置颜色  带阴影线
-//    [appearance setBarTintColor:[UIColor whiteColor]];
+//    [appearance setBarTintColor:CommonWhite];
     //设置拉伸背景图 不带阴影线
-//    [appearance setBackgroundImage:[UIImage createImageWithColor:[UIColor redColor] size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
+//    [appearance setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
 }
 
 + (void)setupBarButtonItemTheme {
-    
+
+    //var
+    UIColor *textNormalColor = [UIColor darkTextColor];
+    UIColor *textDisableColor = cy_RGBColor(150, 150, 150);
+    CGFloat textSize = 16;
+
     UIBarButtonItem *appearance = [UIBarButtonItem appearance];
     //normal
     NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
-    textAttrs[NSForegroundColorAttributeName] = [UIColor darkTextColor];
-    textAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:16];
+    textAttrs[NSForegroundColorAttributeName] = textNormalColor;
+    textAttrs[NSFontAttributeName] = [UIFont boldSystemFontOfSize:textSize];
     [appearance setTitleTextAttributes:textAttrs forState:UIControlStateNormal];
     //disable
     NSMutableDictionary *disableTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
-    disableTextAttrs[NSForegroundColorAttributeName] = cy_RGBColor(150, 150, 150);
+    disableTextAttrs[NSForegroundColorAttributeName] = textDisableColor;
     [appearance setTitleTextAttributes:disableTextAttrs forState:UIControlStateDisabled];
     //highlighted
     //    NSMutableDictionary *highTextAttrs = [NSMutableDictionary dictionaryWithDictionary:textAttrs];
@@ -80,7 +91,7 @@
     
     if (self.viewControllers.count > 0) {
         viewController.hidesBottomBarWhenPushed = YES;
-        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backBarItemWithImageName:@"nav_back_black" isLeft:YES target:self action:@selector(back)];
+        viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem backBarItemWithImageName:@"nav_back" isLeft:YES target:self action:@selector(back)];
     }
     
     [super pushViewController:viewController animated:animated];
@@ -102,7 +113,6 @@
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     
     return ((self.childViewControllers.count > 1) && [(CYViewController *)self.topViewController isNeedGesture]);
-
 }
 
 
