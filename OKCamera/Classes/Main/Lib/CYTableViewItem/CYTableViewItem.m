@@ -16,7 +16,7 @@
         self.detailText = detailText;
         self.desVc = desVc;
         self.accessoryType = accessoryType;
-        self.height = 50;
+        self.height = 40;
     }
     return self;
 }

@@ -222,7 +222,8 @@
     if (aFont && ([aFont.fontName compare:fontName] == NSOrderedSame || [aFont.familyName compare:fontName] == NSOrderedSame)) {
         // Go ahead and display the sample text.
 
-        self.desLabel.font = [UIFont fontWithName:fontName size:14];
+
+        self.versionLabel.font = self.desLabel.font = self.contactLabel.font = [UIFont fontWithName:fontName size:14];
         return;
     }
 

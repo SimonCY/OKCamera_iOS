@@ -45,6 +45,7 @@ green:((float)((hexValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 
 //APP中的颜色
+#define CommonGraytTextColor cy_RGBColor(100, 100, 100)
 #define CommonPink cy_RGBColor(255,165,212)
 #define CommonWhite cy_RGBColor(238,243,233)
 #define Commonblue cy_RGBColor(117,207,248)

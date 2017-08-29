@@ -37,7 +37,7 @@
 + (void)setupNavigationBarTheme {
     //var
     UIColor *textColor = [UIColor darkTextColor];
-    CGFloat textSize = 18;
+    CGFloat textSize = 20;
     BOOL isBold = YES;
 
     //title

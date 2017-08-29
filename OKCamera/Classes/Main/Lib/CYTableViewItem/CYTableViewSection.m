@@ -9,6 +9,15 @@
 #import "CYTableViewSection.h"
 
 @implementation CYTableViewSection
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.headerHeight = 30.f;
+        self.footerHeight = 30.f;
+    }
+    return self;
+}
+
 - (NSMutableArray *)items {
     if (_items == nil) {
         _items = [NSMutableArray array];
