@@ -50,7 +50,7 @@
     [appearance setTintColor:textColor];
     //navBar backgroundimage
     //设置颜色  带阴影线
-//    [appearance setBarTintColor:CommonWhite];
+    [appearance setBarTintColor:CommonWhite];
     //设置拉伸背景图 不带阴影线
 //    [appearance setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
 }

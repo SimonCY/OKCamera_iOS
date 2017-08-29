@@ -23,6 +23,8 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.backgroundColor = CommonWhite;// cy_RGBColor(240, 240, 240);
+
     [self setupNav];
     [self setupUI];
 }
@@ -38,6 +40,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     self.tableView.tableFooterView = [UIView new];
+    self.tableView.backgroundColor = self.view.backgroundColor;
     [self.view addSubview:self.tableView];
 }
 
