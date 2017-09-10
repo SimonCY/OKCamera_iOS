@@ -12,13 +12,15 @@
 @interface CYTableViewSection : NSObject
 
 @property (nonatomic,copy) NSString *headerText;
+
 @property (copy,nonatomic) NSString *footerText;
 
-/** height for title, default is 30.f */
+/** height for title.   */
 @property (assign,nonatomic) CGFloat headerHeight;
 
-/** height for des,   default is 30.f */
+/** height for footerText.  */
 @property (assign,nonatomic) CGFloat footerHeight;
 
 @property (nonatomic,strong) NSMutableArray *items;
+
 @end

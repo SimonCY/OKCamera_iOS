@@ -27,7 +27,7 @@
 #define cy_TIME_END CYLog(@"time interval: %f", -[startTime timeIntervalSinceNow]);
 
 
-//weakself
+//weakself and strongSelf
 #define cy_WEAKSELF __weak __typeof(&*self)weakSelf = self;
 #define cy_STRONGSELF __strong __typeof(&*self) strongSelf = weakSelf;
 
@@ -45,7 +45,7 @@ green:((float)((hexValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 
 //APP中的颜色
-#define CommonGraytTextColor cy_RGBColor(100, 100, 100)
+#define CommonGrayTextColor cy_RGBColor(100, 100, 100)
 #define CommonPink cy_RGBColor(255,165,212)
 #define CommonWhite cy_RGBColor(238,243,233)
 #define Commonblue cy_RGBColor(117,207,248)
@@ -66,16 +66,10 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 #define cy_WriteToFile(data, name) [data writeToFile:[NSString stringWithFormat:@"/Users/chenyan/Desktop/%@.plist", name] atomically:YES]
 
 // deprecated macro
-#define cy_DEPRECATED_IN(VERSION) __attribute__((deprecated("This property has been deprecated and will be removed in VTMagic " VERSION ".")))
+#define cy_DEPRECATED_IN(VERSION) __attribute__((deprecated("This property has been deprecated and will be removed " VERSION ".")))
 
 
 //notification
-#define CYDidLogoutNotification  @"CYDidLogoutNotification"
-#define CYDidLoginNotification  @"CYDidLoginNotification"
 
-#define CYGotoMyProductNotification @"CYGotoMyProductNotification"
-#define CYGotoHomeNotification @"CYGotoHomeNotification"
-
- 
 #endif
 #endif

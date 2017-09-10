@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */; };
+		B66EE89C1F65106B00E5A34C /* CYImageEditorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */; };
+		B66EE89F1F6512CE00E5A34C /* CYImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */; };
+		B66EE8A11F65175800E5A34C /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66EE8A01F65175800E5A34C /* testImg.jpg */; };
 		B695C2F31F42DAE50057F861 /* CYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B695C2F21F42DAE50057F861 /* CYSettingViewController.m */; };
 		B6E2FE1A1F5132FF00CBC8EC /* CYContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2FE181F5132FF00CBC8EC /* CYContactViewController.m */; };
 		B6E2FECD1F54746B00CBC8EC /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2FE201F54746B00CBC8EC /* NSArray+YYAdd.m */; };
@@ -154,6 +157,11 @@
 		652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.release.xcconfig"; sourceTree = "<group>"; };
 		950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B66EE89A1F65106B00E5A34C /* CYImageEditorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditorImage.h; sourceTree = "<group>"; };
+		B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorImage.m; sourceTree = "<group>"; };
+		B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditor.h; sourceTree = "<group>"; };
+		B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageEditor.m; sourceTree = "<group>"; };
+		B66EE8A01F65175800E5A34C /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImg.jpg; sourceTree = "<group>"; };
 		B695C2F11F42DAE50057F861 /* CYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSettingViewController.h; sourceTree = "<group>"; };
 		B695C2F21F42DAE50057F861 /* CYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSettingViewController.m; sourceTree = "<group>"; };
 		B6E2FE171F5132FF00CBC8EC /* CYContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYContactViewController.h; sourceTree = "<group>"; };
@@ -456,6 +464,72 @@
 				3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66EE88B1F6504E500E5A34C /* ImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B66EE88C1F6504E500E5A34C /* Controller */,
+				B66EE88D1F6504E500E5A34C /* Model */,
+				B66EE88E1F6504E500E5A34C /* View */,
+			);
+			path = ImageEditor;
+			sourceTree = "<group>";
+		};
+		B66EE88C1F6504E500E5A34C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B66EE88D1F6504E500E5A34C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B66EE88E1F6504E500E5A34C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B66EE8921F650E6800E5A34C /* CYImageEditor */ = {
+			isa = PBXGroup;
+			children = (
+				B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */,
+				B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */,
+				B66EE8971F650FFE00E5A34C /* Model */,
+				B66EE8981F650FFE00E5A34C /* Tool */,
+				B66EE8991F650FFE00E5A34C /* ViewController */,
+			);
+			path = CYImageEditor;
+			sourceTree = "<group>";
+		};
+		B66EE8971F650FFE00E5A34C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B66EE89A1F65106B00E5A34C /* CYImageEditorImage.h */,
+				B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B66EE8981F650FFE00E5A34C /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		B66EE8991F650FFE00E5A34C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B695C2EA1F429D000057F861 /* View */ = {
@@ -773,6 +847,7 @@
 			children = (
 				B6EBDE321F3F5E5C003A2F0D /* Main */,
 				B695C2EE1F42DAD30057F861 /* Setting */,
+				B66EE88B1F6504E500E5A34C /* ImageEditor */,
 				B6EBDE2E1F3F5E5C003A2F0D /* Home */,
 			);
 			path = Classes;
@@ -855,6 +930,7 @@
 		B6EBDE481F3F5E5C003A2F0D /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				B66EE8921F650E6800E5A34C /* CYImageEditor */,
 				B6E2FF381F55AA0B00CBC8EC /* CYTableViewItem */,
 				B6E2FE1C1F54746B00CBC8EC /* YYKit */,
 				B6EBDE491F3F5E5C003A2F0D /* ZXPUnicode */,
@@ -947,6 +1023,7 @@
 		B6F6B44A1F3E19D400513BBF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B66EE8A01F65175800E5A34C /* testImg.jpg */,
 				B6F6B4561F3E19D400513BBF /* Assets.xcassets */,
 				B6F6B4581F3E19D400513BBF /* LaunchScreen.storyboard */,
 				B6F6B45B1F3E19D400513BBF /* Info.plist */,
@@ -1094,6 +1171,7 @@
 			files = (
 				B6F6B45A1F3E19D400513BBF /* LaunchScreen.storyboard in Resources */,
 				B6F6B4571F3E19D400513BBF /* Assets.xcassets in Resources */,
+				B66EE8A11F65175800E5A34C /* testImg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1278,6 +1356,7 @@
 				B6E2FE1A1F5132FF00CBC8EC /* CYContactViewController.m in Sources */,
 				B6E2FF131F54746B00CBC8EC /* YYDispatchQueuePool.m in Sources */,
 				B6E2FF151F54746B00CBC8EC /* YYGestureRecognizer.m in Sources */,
+				B66EE89C1F65106B00E5A34C /* CYImageEditorImage.m in Sources */,
 				B6EBDE641F3F5E5C003A2F0D /* AppDelegate+CYLaunchAnimation.m in Sources */,
 				B6E2FEE41F54746B00CBC8EC /* UIGestureRecognizer+YYAdd.m in Sources */,
 				B6EBDE761F3F6056003A2F0D /* CYHomeViewController.m in Sources */,
@@ -1310,6 +1389,7 @@
 				B6E2FF0C1F54746B00CBC8EC /* YYTextParser.m in Sources */,
 				B6E2FF171F54746B00CBC8EC /* YYReachability.m in Sources */,
 				B6E2FEDA1F54746B00CBC8EC /* NSTimer+YYAdd.m in Sources */,
+				B66EE89F1F6512CE00E5A34C /* CYImageEditor.m in Sources */,
 				B6E2FEE61F54746B00CBC8EC /* UIScreen+YYAdd.m in Sources */,
 				B6E2FF0E1F54746B00CBC8EC /* YYTextRunDelegate.m in Sources */,
 				B6EBDE651F3F5E5C003A2F0D /* AppDelegate.m in Sources */,

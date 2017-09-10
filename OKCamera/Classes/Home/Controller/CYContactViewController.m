@@ -37,7 +37,7 @@
     [self setupNav];
     [self setupUI];
 
-    [self asynchronouslySetFontName:@"HanziPenSC-W3"];
+//    [self asynchronouslySetFontName:@"HanziPenSC-W3"];
 }
 
 - (void)setupNav {

@@ -55,7 +55,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 
 
         CYTableViewSection *section1 = [CYTableViewSection new];
-        section1.headerText = @"系统";
+//        section1.headerText = @"系统";
         CYTableViewItem *item10 = [[CYTableViewItem alloc] initWithImage:nil text:@"启动" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
         CYTableViewItem *item11 = [[CYTableViewItem alloc] initWithImage:nil text:@"字号" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
 
@@ -84,7 +84,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
 
     CYTableViewSection *sectionModel = self.sections[section];
-    return (sectionModel.headerText.length)? sectionModel.headerHeight : 0.1f;
+    return sectionModel.headerHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -108,7 +108,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:CYSettingCellID];
 
         cell.textLabel.font = [UIFont systemFontOfSize:15];
-        cell.textLabel.textColor = CommonGraytTextColor;
+        cell.textLabel.textColor = CommonGrayTextColor;
     }
 
     CYTableViewSection *section = self.sections[indexPath.section];
