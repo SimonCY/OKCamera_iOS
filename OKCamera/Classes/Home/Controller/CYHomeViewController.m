@@ -158,7 +158,9 @@
 
 - (void)leftItemClicked {
     CYContactViewController *contactVC = [[CYContactViewController alloc] init];
-    [self.navigationController pushViewController:contactVC animated:YES];
+    CYNavigationController *nav = [[CYNavigationController alloc] initWithRootViewController:contactVC];
+    nav.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 #pragma mark - btnClicked

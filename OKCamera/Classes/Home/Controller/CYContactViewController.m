@@ -9,6 +9,7 @@
 #import "CYContactViewController.h"
 #import "UIImage+CYExtension.h"
 #import "NSString+CYExtension.h"
+#import "UIBarButtonItem+Extension.h"
 #import "iPhoneMacro.h"
 #import "YYKit.h"
 
@@ -56,6 +57,9 @@
     titleLabel.textAlignment = NSTextAlignmentCenter;
 
     self.navigationItem.titleView = titleLabel;
+
+
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem backBarItemWithImageName:@"nav_back" isLeft:YES target:self action:@selector(leftItemClicked)];
 }
 
 - (void)setupUI {
@@ -129,7 +133,7 @@
     [self.view addSubview:self.authorImageView];
 
 
-    [self setNeedUpdateVersionLabel];
+    [self setNeedsUpdateVersionLabel];
 }
 
 - (void)viewWillLayoutSubviews {
@@ -187,7 +191,8 @@
 }
 
 #pragma mark - pravite
-- (void)setNeedUpdateVersionLabel {
+
+- (void)setNeedsUpdateVersionLabel {
 
     NSDictionary *infoDictionary = [[NSBundle mainBundle] infoDictionary];
     NSString *app_Version = [infoDictionary objectForKey:@"CFBundleShortVersionString"];
@@ -195,8 +200,17 @@
     self.versionLabel.text = [NSString stringWithFormat:@"版本：v%@",app_Version];
 }
 
-#pragma mark - btnClicked 
+#pragma mark - itemClicked
+
+- (void)leftItemClicked {
+
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - btnClicked
+
 - (void)updateBtnClicked {
+    
     NSString *appID = @"1252918819";
     NSString *str = [NSString stringWithFormat:@"https://itunes.apple.com/cn/app/ai-yu/id%@?mt=8", appID];
     if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString:str]]) {
