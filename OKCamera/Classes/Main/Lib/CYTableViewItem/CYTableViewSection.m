@@ -12,11 +12,14 @@
 
 - (instancetype)init {
     if (self = [super init]) {
+
         self.headerHeight = 30.f;
         self.footerHeight = 30.f;
     }
     return self;
 }
+
+#pragma mark - getter
 
 - (NSMutableArray *)items {
     if (_items == nil) {
@@ -24,5 +27,16 @@
     }
     return _items;
 }
+
+- (CGFloat)headerHeight {
+
+    return (self.headerText.length)? _headerHeight : 15.f;
+}
+
+- (CGFloat)footerHeight {
+    
+    return (self.footerText.length)? _footerHeight : 0.1f;
+}
+
 
 @end

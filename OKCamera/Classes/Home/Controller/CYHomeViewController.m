@@ -164,6 +164,16 @@
 #pragma mark - btnClicked
 
 - (void)editorBtnClicked {
+
+#warning test code
+    UIImage *originalImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"testImg.jpg" ofType:nil]];
+    CYImageEditorImage *imageModel = [[CYImageEditorImage alloc] initWithImage:originalImage];
+
+    CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:imageModel];
+    editorVC.delegate = self;
+    [self.navigationController pushViewController:editorVC animated:YES];
+    return;
+
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = NO;
@@ -204,7 +214,6 @@
 
     CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:imageModel];
     editorVC.delegate = self;
-//    [self presentViewController:editorVC animated:YES completion:nil];
     [self.navigationController pushViewController:editorVC animated:YES];
 }
 

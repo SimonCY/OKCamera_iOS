@@ -466,37 +466,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B66EE88B1F6504E500E5A34C /* ImageEditor */ = {
-			isa = PBXGroup;
-			children = (
-				B66EE88C1F6504E500E5A34C /* Controller */,
-				B66EE88D1F6504E500E5A34C /* Model */,
-				B66EE88E1F6504E500E5A34C /* View */,
-			);
-			path = ImageEditor;
-			sourceTree = "<group>";
-		};
-		B66EE88C1F6504E500E5A34C /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		B66EE88D1F6504E500E5A34C /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		B66EE88E1F6504E500E5A34C /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		B66EE8921F650E6800E5A34C /* CYImageEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,7 +816,6 @@
 			children = (
 				B6EBDE321F3F5E5C003A2F0D /* Main */,
 				B695C2EE1F42DAD30057F861 /* Setting */,
-				B66EE88B1F6504E500E5A34C /* ImageEditor */,
 				B6EBDE2E1F3F5E5C003A2F0D /* Home */,
 			);
 			path = Classes;

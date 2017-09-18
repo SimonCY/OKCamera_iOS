@@ -23,7 +23,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.view.backgroundColor = CommonWhite;// cy_RGBColor(240, 240, 240);
+    self.view.backgroundColor = CommonWhite;
 
     [self setupNav];
     [self setupUI];
@@ -50,12 +50,12 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
         _sections = [NSMutableArray array];
 
         CYTableViewSection *section0 = [CYTableViewSection new];
-        section0.headerText = @"图片美化";
+//        section0.headerText = @"图片美化";
         CYTableViewItem *item00 = [[CYTableViewItem alloc] initWithImage:nil text:@"美化" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
 
 
         CYTableViewSection *section1 = [CYTableViewSection new];
-//        section1.headerText = @"系统";
+        section1.headerText = @"系统";
         CYTableViewItem *item10 = [[CYTableViewItem alloc] initWithImage:nil text:@"启动" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
         CYTableViewItem *item11 = [[CYTableViewItem alloc] initWithImage:nil text:@"字号" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
 
@@ -90,7 +90,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 
     CYTableViewSection *sectionModel = self.sections[section];
-    return (sectionModel.footerText.length)? sectionModel.footerHeight : 0.1f;
+    return sectionModel.footerHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
