@@ -27,6 +27,24 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    for (UIView *subView in self.view.subviews) {
+        
+        if ([subView isKindOfClass:[UITableView class]]) {
+            
+            ((UITableView *)subView).estimatedSectionHeaderHeight = 0;
+            ((UITableView *)subView).estimatedSectionFooterHeight = 0;
+            ((UITableView *)subView).estimatedRowHeight = 0;
+        }
+        if ([subView isKindOfClass:[UIScrollView class]]) {
+            
+            if (@available(iOS 11.0, *)) {
+                ((UIScrollView *)subView).contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+                ((UIScrollView *)subView).contentInset = UIEdgeInsetsMake(64, 0, 49, 0);//iPhoneX这里是88
+                ((UIScrollView *)subView).scrollIndicatorInsets = ((UIScrollView *)subView).contentInset;
+            }
+        }
+    }
 }
 
 - (void)setShouldRotateToLandscapeRight:(BOOL)shouldRotateToLandscapeRight {

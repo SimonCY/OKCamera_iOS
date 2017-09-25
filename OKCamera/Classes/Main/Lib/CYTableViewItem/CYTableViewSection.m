@@ -30,7 +30,7 @@
 
 - (CGFloat)headerHeight {
 
-    return (self.headerText.length)? _headerHeight : 15.f;
+    return (self.headerText.length)? _headerHeight : 15.1f;
 }
 
 - (CGFloat)footerHeight {

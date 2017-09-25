@@ -27,6 +27,11 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 
     [self setupNav];
     [self setupUI];
+    
+//    self.tableView.estimatedRowHeight = 0;
+//    self.tableView.estimatedSectionFooterHeight = 0;
+//    self.tableView.estimatedSectionHeaderHeight = 0;
+ 
 }
 
 - (void)setupNav {
@@ -50,7 +55,7 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
         _sections = [NSMutableArray array];
 
         CYTableViewSection *section0 = [CYTableViewSection new];
-//        section0.headerText = @"图片美化";
+        section0.headerText = @"图片美化";
         CYTableViewItem *item00 = [[CYTableViewItem alloc] initWithImage:nil text:@"美化" detailText:nil desVC:nil accessoryType:UITableViewCellAccessoryDisclosureIndicator];
 
 
@@ -136,6 +141,16 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
 
     CYTableViewSection *sectionModel = self.sections[section];
     return sectionModel.footerText;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    
+    return nil;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    
+    return nil;
 }
 
 
