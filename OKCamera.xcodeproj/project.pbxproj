@@ -848,7 +848,6 @@
 				B6EBDE381F3F5E5C003A2F0D /* Category */,
 				B6EBDE431F3F5E5C003A2F0D /* Controller */,
 				B6EBDE481F3F5E5C003A2F0D /* Lib */,
-				B6EBDE4F1F3F5E5C003A2F0D /* Model */,
 				B6EBDE561F3F5E5C003A2F0D /* Tool */,
 				B6EBDE5C1F3F5E5C003A2F0D /* View */,
 				B6EBDE4C1F3F5E5C003A2F0D /* Macro */,
@@ -922,13 +921,6 @@
 				B6EBDE4E1F3F5E5C003A2F0D /* iPhoneMacro.h */,
 			);
 			path = Macro;
-			sourceTree = "<group>";
-		};
-		B6EBDE4F1F3F5E5C003A2F0D /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		B6EBDE561F3F5E5C003A2F0D /* Tool */ = {

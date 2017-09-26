@@ -11,6 +11,7 @@
 #import "NSString+CYExtension.h"
 #import "UIBarButtonItem+Extension.h"
 #import "iPhoneMacro.h"
+#import "UIView+CYExtension.h"
 #import "YYKit.h"
 
 @interface CYContactViewController ()
@@ -141,14 +142,14 @@
 
     //logo
     CGFloat logoWH = 110;
-    CGFloat logoX = (cy_SCREEN_WIDTH - logoWH) / 2;
+    CGFloat logoX = (self.view.width - logoWH) / 2;
     CGFloat logoY = 120;
     self.logoImageView.frame = CGRectMake(logoX, logoY, logoWH, logoWH);
 
     //versionLabel
     CGFloat versionX = 0;
     CGFloat versionY = CGRectGetMaxY(self.logoImageView.frame) + 15;
-    CGFloat versionW = cy_SCREEN_WIDTH;
+    CGFloat versionW = self.view.width;
     CGFloat versionH = 14;
     self.versionLabel.frame = CGRectMake(versionX, versionY, versionW, versionH);
 
@@ -156,7 +157,7 @@
     CGFloat btnW = 100;
     CGFloat btnH = 28;
     CGFloat btnY = CGRectGetMaxY(self.versionLabel.frame) + 15;
-    CGFloat updateX = (cy_SCREEN_WIDTH - btnW * 2) / 3;
+    CGFloat updateX = (self.view.width - btnW * 2) / 3;
     CGFloat judgeX = btnW + updateX * 2;
     self.updateBtn.frame = CGRectMake(updateX, btnY, btnW, btnH);
     self.judgeBtn.frame = CGRectMake(judgeX, btnY, btnW, btnH);
@@ -165,20 +166,20 @@
     //desLabel
     CGFloat desLabelX = updateX / 2;
     CGFloat desLabelY = CGRectGetMaxY(self.updateBtn.frame) + 30;
-    CGFloat desLabelW = cy_SCREEN_WIDTH - desLabelX * 2;
+    CGFloat desLabelW = self.view.width - desLabelX * 2;
     CGFloat desLabelH = [self.desLabel.text sizeWithFont:self.desLabel.font maxW:desLabelW].height;
     self.desLabel.frame = CGRectMake(desLabelX, desLabelY, desLabelW, desLabelH);
 
     //contactLabel
     CGFloat contactLabelX = updateX / 2;
     CGFloat contactLabelY = CGRectGetMaxY(self.desLabel.frame) + 30;
-    CGFloat contactLabelW = cy_SCREEN_WIDTH - desLabelX * 2;
+    CGFloat contactLabelW = self.view.width - desLabelX * 2;
     CGFloat contactLabelH = [self.contactLabel.text sizeWithFont:self.contactLabel.font maxW:desLabelW].height;
     self.contactLabel.frame = CGRectMake(contactLabelX, contactLabelY, contactLabelW, contactLabelH);
 
     //authorImage
     CGFloat authorX = 0;
-    CGFloat authorW = cy_SCREEN_WIDTH;
+    CGFloat authorW = self.view.width;
     CGFloat authorH = 30;
     CGFloat authorY = self.view.bounds.size.height - authorH - 20;
     self.authorImageView.frame = CGRectMake(authorX, authorY, authorW, authorH);

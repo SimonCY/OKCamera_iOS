@@ -24,8 +24,7 @@
     [super viewDidLoad];
     
     self.interactivePopGestureRecognizer.delegate = self;
-    self.navigationBar.shadowImage = [UIImage new];
-    
+ 
 //    self.navigationBar.prefersLargeTitles = NO;
 //    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
     
@@ -52,10 +51,9 @@
     [appearance setTitleTextAttributes:textAttrs];
     //系统返回按钮颜色
     [appearance setTintColor:textColor];
-    //navBar backgroundimage
+ 
     //设置颜色  带阴影线
-//    [appearance setBarTintColor:CommonWhite];
-//    [appearance setShadowImage:[UIImage createImageWithColor:[UIColor redColor] size:CGSizeMake(1, 1)]];
+    [appearance setBarTintColor:CommonWhite];
     //设置拉伸背景图 不带阴影线
 //    [appearance setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forBarMetrics:UIBarMetricsDefault];
 }

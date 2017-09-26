@@ -15,6 +15,8 @@
 
 @implementation CYViewController
 
+#pragma mark - system
+
 - (instancetype)init {
     if (self = [super init]) {
         
@@ -28,6 +30,19 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    [self baseUISetup];
+}
+
+- (void)baseUISetup {
+    
+    
+    //nav
+//    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+//    self.navigationController.navigationBar.layer.shadowColor = [UIColor blackColor].CGColor;
+//    self.navigationController.navigationBar.layer.shadowOpacity = 0.5f;
+//    self.navigationController.navigationBar.layer.shadowOffset = CGSizeMake(0, 0.05);
+ 
+    //UI
     for (UIView *subView in self.view.subviews) {
         
         if ([subView isKindOfClass:[UITableView class]]) {
@@ -45,7 +60,23 @@
             }
         }
     }
+    
+    //大标题
+    //    if (@available(iOS 11.0, *)) {
+    //        self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
+    //        self.navigationController.navigationBar.prefersLargeTitles = YES;
+    //
+    //        UISearchController *searchVC = [[UISearchController alloc] initWithSearchResultsController:self];
+    //        self.navigationItem.searchController = searchVC;
+    //        self.definesPresentationContext = true;
+    //
+    //    } else {
+    //        // Fallback on earlier versions
+    //    }
+
 }
+
+#pragma mark - public
 
 - (void)setShouldRotateToLandscapeRight:(BOOL)shouldRotateToLandscapeRight {
     

@@ -14,6 +14,8 @@
 #import "UIBarButtonItem+Extension.h"
 #import "CYContactViewController.h"
 #import "CYImageEditor.h"
+#import "UIView+YYAdd.h"
+#import "UIDevice+YYAdd.h"
 
 @interface CYHomeViewController ()<UIImagePickerControllerDelegate,UINavigationControllerDelegate,CYImageEditorDelegate>
 @property (nonatomic,strong) UIButton *editorBtn;
@@ -23,7 +25,7 @@
 
 @implementation CYHomeViewController
 
-#pragma mark - view cycle
+#pragma mark - system
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,13 +35,7 @@
 }
 
 - (void)setupNav {
-
-    UILabel *titleLabel = [[UILabel alloc] init];
-    titleLabel.text = @"OKCamera";
-    titleLabel.textAlignment = NSTextAlignmentCenter;
-    titleLabel.font = [UIFont italicSystemFontOfSize:15];
-    titleLabel.frame = CGRectMake(0, 0, 50, 15);
-
+ 
     UIImageView *titleImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"title"]];
     titleImageView.bounds = CGRectMake(0, 0, titleImageView.image.size.width, titleImageView.image.size.height);
     self.navigationItem.titleView = titleImageView;
@@ -47,41 +43,70 @@
     //    [self.navigationController setNavigationBarHidden:YES];
 
     self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"home_info" isLeft:YES target:self action:@selector(leftItemClicked)];
+
 }
 
 - (void)setupUI {
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    //common
-    CGFloat offset = 50;
-    CGFloat margin = 10;
     CGFloat radius = 3;
     
-    CGFloat btnX = margin;
-    CGFloat btnH = (self.view.bounds.size.height - 64 - margin * 4) / 3;
-    CGFloat btnW = self.view.bounds.size.width - margin * 2;
-    
     //editorBtn
-    CGFloat editorBtnY = margin + 64 ;
-    CGFloat editorBtnH = btnH + offset / 2;
-    
     self.editorBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.editorBtn.frame = CGRectMake(btnX, editorBtnY, btnW, editorBtnH);
     self.editorBtn.layer.cornerRadius = radius;
     self.editorBtn.layer.masksToBounds = YES;
     [self.editorBtn setImage:[UIImage imageNamed:@"home_beauty"] forState:UIControlStateNormal];
     [self.editorBtn setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
     [self.view addSubview:self.editorBtn];
 
+    //cameraBtn
+    self.cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.cameraBtn.layer.cornerRadius = radius;
+    self.cameraBtn.layer.masksToBounds = YES;
+    [self.cameraBtn setImage:[UIImage imageNamed:@"home_camera"] forState:UIControlStateNormal];
+    [self.cameraBtn setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
+    [self.view addSubview:self.cameraBtn];
+
+    //settingBtn
+    self.settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    self.settingBtn.layer.cornerRadius = radius;
+    self.settingBtn.layer.masksToBounds = YES;
+    [self.settingBtn setImage:[UIImage imageNamed:@"home_setting"] forState:UIControlStateNormal];
+    [self.settingBtn setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
+    [self.view addSubview:self.settingBtn];
+
+    //target
+    [self.editorBtn addTarget:self action:@selector(editorBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.cameraBtn addTarget:self action:@selector(cameraBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+    [self.settingBtn addTarget:self action:@selector(settingBtnClicked) forControlEvents:UIControlEventTouchUpInside];
+}
+
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    //common
+    CGFloat offset = 50;
+    CGFloat margin = 10;
+    
+    CGFloat btnX = margin;
+    CGFloat btnH = (self.view.height - cy_NavbarHeight - cy_StatusBarHeight - cy_HomebarHeight - margin * 4) / 3;
+    CGFloat btnW = self.view.width - margin * 2;
+    
+    //editorBtn
+    CGFloat editorBtnY = margin + cy_NavbarHeight + cy_StatusBarHeight;
+    CGFloat editorBtnH = btnH + offset / 2;
+    self.editorBtn.frame = CGRectMake(btnX, editorBtnY, btnW, editorBtnH);
+    
     CAShapeLayer *albumMaskLayer = [CAShapeLayer layer];
     UIBezierPath *albumMaskPath = [UIBezierPath bezierPath];
-
+    
     CGFloat editorBtnMinX = CGRectGetMinX(self.editorBtn.bounds);
     CGFloat editorBtnMaxX = CGRectGetMaxX(self.editorBtn.bounds);
     CGFloat editorBtnMinY = CGRectGetMinY(self.editorBtn.bounds);
     CGFloat editorBtnMaxY = CGRectGetMaxY(self.editorBtn.bounds);
-
+    
     [albumMaskPath moveToPoint:CGPointMake(editorBtnMinX, editorBtnMinY)];
     [albumMaskPath addLineToPoint:CGPointMake(editorBtnMaxX, editorBtnMinY)];
     [albumMaskPath addLineToPoint:CGPointMake(editorBtnMaxX, editorBtnMaxY)];
@@ -89,28 +114,22 @@
     [albumMaskPath addLineToPoint:CGPointMake(editorBtnMinX, editorBtnMinY)];
     albumMaskLayer.path = albumMaskPath.CGPath;
     self.editorBtn.layer.mask = albumMaskLayer;
-
-
+    
+    
     //cameraBtn
     CGFloat cameraBtnY = CGRectGetMaxY(self.editorBtn.frame)+ margin - offset;
     CGFloat cameraBtnH = btnH + offset;
-    
-    self.cameraBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.cameraBtn.layer.cornerRadius = radius;
-    self.cameraBtn.layer.masksToBounds = YES;
-    self.cameraBtn.frame = CGRectMake(btnX, cameraBtnY, btnW, cameraBtnH);
-    [self.cameraBtn setImage:[UIImage imageNamed:@"home_camera"] forState:UIControlStateNormal];
-    [self.cameraBtn setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
-    [self.view addSubview:self.cameraBtn];
 
+    self.cameraBtn.frame = CGRectMake(btnX, cameraBtnY, btnW, cameraBtnH);
+    
     CAShapeLayer *cameraMaskLayer = [CAShapeLayer layer];
     UIBezierPath *cameraMaskPath = [UIBezierPath bezierPath];
-
+    
     CGFloat cameraBtnMinX = CGRectGetMinX(self.cameraBtn.bounds);
     CGFloat cameraBtnMaxX = CGRectGetMaxX(self.cameraBtn.bounds);
     CGFloat cameraBtnMinY = CGRectGetMinY(self.cameraBtn.bounds);
     CGFloat cameraBtnMaxY = CGRectGetMaxY(self.cameraBtn.bounds);
-
+    
     [cameraMaskPath moveToPoint:CGPointMake(cameraBtnMinX, cameraBtnMinY)];
     [cameraMaskPath addLineToPoint:CGPointMake(cameraBtnMaxX, cameraBtnMinY + offset)];
     [cameraMaskPath addLineToPoint:CGPointMake(cameraBtnMaxX, cameraBtnMaxY - offset)];
@@ -118,27 +137,22 @@
     [cameraMaskPath addLineToPoint:CGPointMake(cameraBtnMinX, cameraBtnMinY)];
     cameraMaskLayer.path = cameraMaskPath.CGPath;
     self.cameraBtn.layer.mask = cameraMaskLayer;
-
-
+    
+    
     //settingBtn
     CGFloat settingY = CGRectGetMaxY(self.cameraBtn.frame) + margin - offset;
     CGFloat settingH = btnH + offset / 2;
-    self.settingBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    self.settingBtn.frame = CGRectMake(btnX, settingY, btnW, settingH);
-    self.settingBtn.layer.cornerRadius = radius;
-    self.settingBtn.layer.masksToBounds = YES;
-    [self.settingBtn setImage:[UIImage imageNamed:@"home_setting"] forState:UIControlStateNormal];
-    [self.settingBtn setBackgroundImage:[UIImage createImageWithColor:CommonWhite size:CGSizeMake(1, 1)] forState:UIControlStateNormal];
-    [self.view addSubview:self.settingBtn];
 
+    self.settingBtn.frame = CGRectMake(btnX, settingY, btnW, settingH);
+    
     CAShapeLayer *settingMaskLayer = [CAShapeLayer layer];
     UIBezierPath *settingMaskPath = [UIBezierPath bezierPath];
-
+    
     CGFloat settingBtnMinX = CGRectGetMinX(self.settingBtn.bounds);
     CGFloat settingBtnMaxX = CGRectGetMaxX(self.settingBtn.bounds);
     CGFloat settingBtnMinY = CGRectGetMinY(self.settingBtn.bounds);
     CGFloat settingBtnMaxY = CGRectGetMaxY(self.settingBtn.bounds);
-
+    
     [settingMaskPath moveToPoint:CGPointMake(settingBtnMinX, settingBtnMinY + offset)];
     [settingMaskPath addLineToPoint:CGPointMake(settingBtnMaxX, settingBtnMinY)];
     [settingMaskPath addLineToPoint:CGPointMake(settingBtnMaxX, settingBtnMaxY)];
@@ -146,12 +160,6 @@
     [settingMaskPath addLineToPoint:CGPointMake(settingBtnMinX, settingBtnMinY + offset)];
     settingMaskLayer.path = settingMaskPath.CGPath;
     self.settingBtn.layer.mask = settingMaskLayer;
-
-
-    //target
-    [self.editorBtn addTarget:self action:@selector(editorBtnClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self.cameraBtn addTarget:self action:@selector(cameraBtnClicked) forControlEvents:UIControlEventTouchUpInside];
-    [self.settingBtn addTarget:self action:@selector(settingBtnClicked) forControlEvents:UIControlEventTouchUpInside];
 }
 
 #pragma mark - itemClicked 

@@ -49,6 +49,12 @@ static NSString *CYSettingCellID = @"CYSettingCellID";
     [self.view addSubview:self.tableView];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    self.tableView.frame = self.view.frame;
+}
+
 #pragma mark - getter
 - (NSMutableArray *)sections {
     if (_sections == nil) {

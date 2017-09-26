@@ -51,11 +51,17 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 #define Commonblue cy_RGBColor(117,207,248)
 
 //frame and size
-#define cy_SCREEN_BOUNDS    [[UIScreen mainScreen] bounds]
-#define cy_DCREEN_SIZE      [[UIScreen mainScreen] bounds].size
-#define cy_SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
-#define cy_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define cy_ScreenBounds    [[UIScreen mainScreen] bounds]
+#define cy_ScreenSize      [[UIScreen mainScreen] bounds].size
+#define cy_ScreenWidth     [UIScreen mainScreen].bounds.size.width
+#define cy_ScreenHeight    [UIScreen mainScreen].bounds.size.height
+#define cy_TabbarHeight    ([[UIApplication sharedApplication] statusBarFrame].size.height>20?83:49)
+#define cy_NavbarHeight    self.navigationController.navigationBar.frame.size.height
+#define cy_StatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
+#define cy_HomebarHeight   ((cy_ScreenHeight == 812.0 || cy_ScreenWidth == 812.0)?34:0)
 
+//device
+#define cy_isiPhoneX ((cy_ScreenHeight == 812.0 || cy_ScreenWidth == 812.0)?1:0)
 
 /* 角度转弧度 */
 #define DegreesToRadian(x) (M_PI * (x) / 180.0)
