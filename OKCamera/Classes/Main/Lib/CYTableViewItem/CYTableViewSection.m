@@ -13,7 +13,7 @@
 - (instancetype)init {
     if (self = [super init]) {
 
-        self.headerHeight = 30.f;
+        self.headerHeight = 45.f;
         self.footerHeight = 30.f;
     }
     return self;
