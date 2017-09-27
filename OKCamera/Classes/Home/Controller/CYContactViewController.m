@@ -60,7 +60,7 @@
     self.navigationItem.titleView = titleLabel;
 
 
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem backBarItemWithImageName:@"nav_back" isLeft:YES target:self action:@selector(leftItemClicked)];
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem backBarItemWithImageName:@"nav_dismiss" isLeft:YES target:self action:@selector(leftItemClicked)];
 }
 
 - (void)setupUI {
