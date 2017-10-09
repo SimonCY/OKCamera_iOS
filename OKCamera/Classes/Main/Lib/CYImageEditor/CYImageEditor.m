@@ -17,7 +17,7 @@
 
 @implementation CYImageEditor
 
-#pragma mark - system
+#pragma mark - cycle
 
 - (instancetype)initWithImage:(CYImageEditorImage *)image {
     if (self = [super init]) {
@@ -26,8 +26,6 @@
     }
     return self;
 }
-
-#pragma mark - view cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -48,9 +46,19 @@
     [super viewWillDisappear:animated];
 
     if (!cy_isiPhoneX) {
+        
         [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
     }
 }
 
+#pragma mark - public
+
+- (void)showInViewController:(UIViewController *)controller withImageView:(UIImageView *)imageView {
+
+}
+
+- (void)refreshToolSetting {
+    
+}
 
 @end
