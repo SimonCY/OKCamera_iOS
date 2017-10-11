@@ -7,6 +7,7 @@
 //
 
 #import "CYImageEditor.h"
+#import "CYEditorViewController.h"
 #import "iPhoneMacro.h"
 
 @interface CYImageEditor ()
@@ -18,6 +19,11 @@
 @implementation CYImageEditor
 
 #pragma mark - system
+
+- (instancetype)init {
+
+    return [CYEditorViewController new];
+}
 
 - (instancetype)initWithImage:(CYImageEditorImage *)image {
     if (self = [super init]) {

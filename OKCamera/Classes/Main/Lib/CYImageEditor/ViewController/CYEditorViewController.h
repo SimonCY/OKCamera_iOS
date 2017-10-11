@@ -6,8 +6,8 @@
 //  Copyright © 2017年 Chenyan. All rights reserved.
 //
 
-#import "CYViewController.h"
+#import "CYImageEditor.h"
 
-@interface CYEditorViewController : CYViewController
+@interface CYEditorViewController : CYImageEditor
 
 @end
