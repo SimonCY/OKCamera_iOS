@@ -8,7 +8,6 @@
 
 #import "CYViewController.h"
 #import "CYImageEditorImage.h"
-#import "CYImageEditorTheme.h"
 @class CYImageEditor;
 
 
@@ -16,9 +15,9 @@
 
 @optional
 
-- (void)CYImageEditor:(CYImageEditor *)editor didFinishEditingWithImage:(CYImageEditorImage *)image;
+- (void)CYImageEditor:(CYImageEditor *)editor didFinishEditingWithImage:(UIImage*)image;
 
-- (void)CYImageEditorDidCancel:(CYImageEditor *)editor;
+- (void)CYImageEditorDidCancel:(CYImageEditor*)editor;
 
 @end
 
@@ -27,13 +26,7 @@
 
 @property (weak,nonatomic) id<CYImageEditorDelegate> delegate;
 
-@property (nonatomic,strong) CYImageEditorTheme *theme;
-
 /** the only-one initMethod */
 - (instancetype)initWithImage:(CYImageEditorImage *)image;
-
-- (void)showInViewController:(UIViewController *)controller withImageView:(UIImageView *)imageView;
-
-- (void)refreshToolSetting;
 
 @end

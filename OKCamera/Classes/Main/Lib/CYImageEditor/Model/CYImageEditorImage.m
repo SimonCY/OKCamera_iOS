@@ -10,8 +10,6 @@
 
 @implementation CYImageEditorImage
 
-#pragma mark cycle
-
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super init]) {
 
