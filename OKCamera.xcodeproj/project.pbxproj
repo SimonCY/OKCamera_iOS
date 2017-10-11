@@ -11,6 +11,7 @@
 		B66EE89C1F65106B00E5A34C /* CYImageEditorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */; };
 		B66EE89F1F6512CE00E5A34C /* CYImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */; };
 		B66EE8A11F65175800E5A34C /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66EE8A01F65175800E5A34C /* testImg.jpg */; };
+		B68CF2301F8E723200E45D10 /* CYEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B68CF22F1F8E723200E45D10 /* CYEditorViewController.m */; };
 		B695C2F31F42DAE50057F861 /* CYSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B695C2F21F42DAE50057F861 /* CYSettingViewController.m */; };
 		B6E2FE1A1F5132FF00CBC8EC /* CYContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2FE181F5132FF00CBC8EC /* CYContactViewController.m */; };
 		B6E2FECD1F54746B00CBC8EC /* NSArray+YYAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E2FE201F54746B00CBC8EC /* NSArray+YYAdd.m */; };
@@ -162,6 +163,8 @@
 		B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditor.h; sourceTree = "<group>"; };
 		B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageEditor.m; sourceTree = "<group>"; };
 		B66EE8A01F65175800E5A34C /* testImg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = testImg.jpg; sourceTree = "<group>"; };
+		B68CF22E1F8E723200E45D10 /* CYEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYEditorViewController.h; sourceTree = "<group>"; };
+		B68CF22F1F8E723200E45D10 /* CYEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYEditorViewController.m; sourceTree = "<group>"; };
 		B695C2F11F42DAE50057F861 /* CYSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYSettingViewController.h; sourceTree = "<group>"; };
 		B695C2F21F42DAE50057F861 /* CYSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYSettingViewController.m; sourceTree = "<group>"; };
 		B6E2FE171F5132FF00CBC8EC /* CYContactViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYContactViewController.h; sourceTree = "<group>"; };
@@ -497,6 +500,8 @@
 		B66EE8991F650FFE00E5A34C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				B68CF22E1F8E723200E45D10 /* CYEditorViewController.h */,
+				B68CF22F1F8E723200E45D10 /* CYEditorViewController.m */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -1357,6 +1362,7 @@
 				B6E2FF101F54746B00CBC8EC /* YYLabel.m in Sources */,
 				B6E2FEFF1F54746B00CBC8EC /* YYTextDebugOption.m in Sources */,
 				B6E2FEFB1F54746B00CBC8EC /* YYWebImageOperation.m in Sources */,
+				B68CF2301F8E723200E45D10 /* CYEditorViewController.m in Sources */,
 				B6E2FF0D1F54746B00CBC8EC /* YYTextRubyAnnotation.m in Sources */,
 				B6E2FF3E1F55AA0B00CBC8EC /* CYTableViewSection.m in Sources */,
 				B6E2FED51F54746B00CBC8EC /* NSObject+YYAdd.m in Sources */,
