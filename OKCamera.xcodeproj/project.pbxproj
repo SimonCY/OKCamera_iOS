@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */; };
+		B602B5051F828E3300E970D9 /* CYImageEditorTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = B602B5041F828E3300E970D9 /* CYImageEditorTheme.m */; };
+		B602B50A1F82957D00E970D9 /* CYImageEditorToolModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B602B5091F82957D00E970D9 /* CYImageEditorToolModel.m */; };
+		B602B50D1F83385800E970D9 /* CYImageEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B602B50C1F83385800E970D9 /* CYImageEditorViewController.m */; };
 		B66EE89C1F65106B00E5A34C /* CYImageEditorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */; };
 		B66EE89F1F6512CE00E5A34C /* CYImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */; };
 		B66EE8A11F65175800E5A34C /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66EE8A01F65175800E5A34C /* testImg.jpg */; };
@@ -158,6 +161,13 @@
 		652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.release.xcconfig"; sourceTree = "<group>"; };
 		950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B602B5031F828E3300E970D9 /* CYImageEditorTheme.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageEditorTheme.h; sourceTree = "<group>"; };
+		B602B5041F828E3300E970D9 /* CYImageEditorTheme.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorTheme.m; sourceTree = "<group>"; };
+		B602B5071F82952000E970D9 /* CYImageEditor.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CYImageEditor.bundle; sourceTree = "<group>"; };
+		B602B5081F82957D00E970D9 /* CYImageEditorToolModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageEditorToolModel.h; sourceTree = "<group>"; };
+		B602B5091F82957D00E970D9 /* CYImageEditorToolModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorToolModel.m; sourceTree = "<group>"; };
+		B602B50B1F83385800E970D9 /* CYImageEditorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageEditorViewController.h; sourceTree = "<group>"; };
+		B602B50C1F83385800E970D9 /* CYImageEditorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorViewController.m; sourceTree = "<group>"; };
 		B66EE89A1F65106B00E5A34C /* CYImageEditorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditorImage.h; sourceTree = "<group>"; };
 		B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorImage.m; sourceTree = "<group>"; };
 		B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditor.h; sourceTree = "<group>"; };
@@ -472,11 +482,13 @@
 		B66EE8921F650E6800E5A34C /* CYImageEditor */ = {
 			isa = PBXGroup;
 			children = (
+				B602B5071F82952000E970D9 /* CYImageEditor.bundle */,
 				B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */,
 				B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */,
+				B602B50B1F83385800E970D9 /* CYImageEditorViewController.h */,
+				B602B50C1F83385800E970D9 /* CYImageEditorViewController.m */,
 				B66EE8971F650FFE00E5A34C /* Model */,
 				B66EE8981F650FFE00E5A34C /* Tool */,
-				B66EE8991F650FFE00E5A34C /* ViewController */,
 			);
 			path = CYImageEditor;
 			sourceTree = "<group>";
@@ -486,6 +498,10 @@
 			children = (
 				B66EE89A1F65106B00E5A34C /* CYImageEditorImage.h */,
 				B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */,
+				B602B5031F828E3300E970D9 /* CYImageEditorTheme.h */,
+				B602B5041F828E3300E970D9 /* CYImageEditorTheme.m */,
+				B602B5081F82957D00E970D9 /* CYImageEditorToolModel.h */,
+				B602B5091F82957D00E970D9 /* CYImageEditorToolModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -506,6 +522,7 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
+        b98afb9b239ed0fbed1a21767d4af1d71bbf4ae0
 		B695C2EA1F429D000057F861 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1305,6 +1322,8 @@
 				B6E2FF071F54746B00CBC8EC /* NSAttributedString+YYText.m in Sources */,
 				B6EBDE6C1F3F5E5C003A2F0D /* CYViewController.m in Sources */,
 				B6E2FF061F54746B00CBC8EC /* YYTextSelectionView.m in Sources */,
+				B602B5051F828E3300E970D9 /* CYImageEditorTheme.m in Sources */,
+				B602B50A1F82957D00E970D9 /* CYImageEditorToolModel.m in Sources */,
 				B6EBDE681F3F5E5C003A2F0D /* UIBarButtonItem+Extension.m in Sources */,
 				B6E2FEDB1F54746B00CBC8EC /* CALayer+YYAdd.m in Sources */,
 				B6E2FEEB1F54746B00CBC8EC /* YYCache.m in Sources */,
@@ -1342,6 +1361,7 @@
 				B6E2FEF01F54746B00CBC8EC /* CALayer+YYWebImage.m in Sources */,
 				B6EBDE731F3F5E5C003A2F0D /* CYTextView.m in Sources */,
 				B6E2FEF61F54746B00CBC8EC /* YYImage.m in Sources */,
+				B602B50D1F83385800E970D9 /* CYImageEditorViewController.m in Sources */,
 				B6E2FF111F54746B00CBC8EC /* YYTextView.m in Sources */,
 				B6E2FEF11F54746B00CBC8EC /* MKAnnotationView+YYWebImage.m in Sources */,
 				B6E2FEDE1F54746B00CBC8EC /* UIBarButtonItem+YYAdd.m in Sources */,
