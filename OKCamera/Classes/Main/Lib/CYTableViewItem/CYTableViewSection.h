@@ -15,7 +15,7 @@
 
 @property (copy,nonatomic) NSString *footerText;
 
-/** height for title.   */
+/** height for title.  */
 @property (assign,nonatomic) CGFloat headerHeight;
 
 /** height for footerText.  */

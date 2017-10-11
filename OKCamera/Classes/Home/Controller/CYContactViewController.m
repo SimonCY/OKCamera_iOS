@@ -143,7 +143,7 @@
     //logo
     CGFloat logoWH = 110;
     CGFloat logoX = (self.view.width - logoWH) / 2;
-    CGFloat logoY = 120;
+    CGFloat logoY = cy_StatusBarHeight + cy_NavbarHeight + 30;
     self.logoImageView.frame = CGRectMake(logoX, logoY, logoWH, logoWH);
 
     //versionLabel
