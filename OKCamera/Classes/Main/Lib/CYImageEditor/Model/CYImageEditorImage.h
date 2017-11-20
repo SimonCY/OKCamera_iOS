@@ -16,8 +16,8 @@
 /** the image current being edited as you could see */
 @property (strong,nonatomic,readonly) UIImage *editedImage;
 
-/** the image you begin sub-editing this time passed, existing for revoking */
-@property (strong,nonatomic,readonly) UIImage *lastEditedImage;
+///** the image you begin sub-editing this time passed, existing for revoking */
+//@property (strong,nonatomic,readonly) UIImage *lastEditedImage;
 
 /** the only-one initMethod */
 - (instancetype)initWithImage:(UIImage *)image;

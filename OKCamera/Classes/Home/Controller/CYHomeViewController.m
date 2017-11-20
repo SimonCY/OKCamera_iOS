@@ -177,10 +177,10 @@
 
 #warning test code
     UIImage *originalImage = [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"testImg.jpg" ofType:nil]];
-    CYImageEditorImage *imageModel = [[CYImageEditorImage alloc] initWithImage:originalImage];
 
-    CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:imageModel];
+    CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:originalImage];
     editorVC.delegate = self;
+//    [self presentViewController:editorVC animated:YES completion:nil];
     [self.navigationController pushViewController:editorVC animated:YES];
     return;
 
@@ -220,9 +220,7 @@
 
     [picker dismissViewControllerAnimated:YES completion:nil];
 
-    CYImageEditorImage *imageModel = [[CYImageEditorImage alloc] initWithImage:originalImage];
-
-    CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:imageModel];
+    CYImageEditor *editorVC = [[CYImageEditor alloc] initWithImage:originalImage];
     editorVC.delegate = self;
     [self.navigationController pushViewController:editorVC animated:YES];
 }

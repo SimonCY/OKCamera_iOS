@@ -13,9 +13,9 @@
 - (instancetype)initWithImage:(UIImage *)image {
     if (self = [super init]) {
 
-        _originalImage = image;
+        _originalImage = [UIImage imageWithCGImage:image.CGImage];
         _editedImage = [UIImage imageWithCGImage:_originalImage.CGImage];
-        _lastEditedImage = [UIImage imageWithCGImage:_originalImage.CGImage];
+//        _lastEditedImage = [UIImage imageWithCGImage:_originalImage.CGImage];
     }
     return self;
 }

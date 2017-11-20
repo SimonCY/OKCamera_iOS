@@ -6,8 +6,9 @@
 //  Copyright © 2017年 Chenyan. All rights reserved.
 //
 
-#import "CYViewController.h"
-#import "CYImageEditorImage.h"
+
+#import "CYEditorViewController.h"
+
 @class CYImageEditor;
 
 
@@ -22,11 +23,13 @@
 @end
 
 
-@interface CYImageEditor : CYViewController
+@interface CYImageEditor : CYEditorViewController
 
 @property (weak,nonatomic) id<CYImageEditorDelegate> delegate;
 
 /** the only-one initMethod */
-- (instancetype)initWithImage:(CYImageEditorImage *)image;
+- (instancetype)initWithImage:(UIImage *)image;
+
+
 
 @end

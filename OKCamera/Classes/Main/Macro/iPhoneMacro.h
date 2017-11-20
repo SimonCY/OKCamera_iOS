@@ -23,13 +23,16 @@
 #define cy_LogFunc CYLog(@"%s", __func__)
 
 // 打印方法运行时间
-#define cy_TIME_BEGIN NSDate * startTime = [NSDate date];
-#define cy_TIME_END CYLog(@"time interval: %f", -[startTime timeIntervalSinceNow]);
+#define cy_Time_Begin NSDate * startTime = [NSDate date];
+#define cy_Time_End CYLog(@"time interval: %f", -[startTime timeIntervalSinceNow]);
 
 
 //weakself and strongSelf
 #define cy_WEAKSELF __weak __typeof(&*self)weakSelf = self;
 #define cy_STRONGSELF __strong __typeof(&*self) strongSelf = weakSelf;
+
+//str
+#define cy_LocalizedStringForKey(key) NSLocalizedString(key, @"")
 
 //color
 #define cy_RGBAColor(r, g, b, a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]

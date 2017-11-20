@@ -7,38 +7,25 @@
 //
 
 #import "CYImageEditor.h"
-#import "CYEditorViewController.h"
 #import "iPhoneMacro.h"
 
-@interface CYImageEditor ()
-
-@property (strong,nonatomic) CYImageEditorImage *image;
+@interface CYImageEditor ()<UINavigationControllerDelegate>
 
 @end
 
 @implementation CYImageEditor
 
 #pragma mark - system
+- (instancetype)initWithImage:(UIImage *)image {
 
-- (instancetype)init {
-
-    return [CYEditorViewController new];
+    return [super initWithImage:image];
 }
-
-- (instancetype)initWithImage:(CYImageEditorImage *)image {
-    if (self = [super init]) {
-        
-        _image = image;
-    }
-    return self;
-}
-
-#pragma mark - view cycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
     self.view.backgroundColor = CommonWhite;
+    self.navBarHidden = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -58,5 +45,11 @@
     }
 }
 
+#pragma mark - public
+
+- (void)show {
+
+    
+}
 
 @end

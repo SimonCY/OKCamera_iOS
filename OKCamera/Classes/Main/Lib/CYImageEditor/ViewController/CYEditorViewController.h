@@ -6,8 +6,16 @@
 //  Copyright © 2017年 Chenyan. All rights reserved.
 //
 
-#import "CYImageEditor.h"
+#import "CYViewController.h"
+#import "CYImageEditorImage.h"
 
-@interface CYEditorViewController : CYImageEditor
+@interface CYEditorViewController : CYViewController
+
+/** the only-one initMethod */
+- (instancetype)initWithImage:(UIImage *)image;
+
+ 
+
+- (void)resetZoomScaleWithAnimated:(BOOL)animated;
 
 @end

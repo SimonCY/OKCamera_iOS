@@ -5,18 +5,22 @@
 //  Created by RRTY on 17/3/14.
 //  Copyright © 2017年 deepAI. All rights reserved.
 //
+ 
+#import "CYNavigationController.h"
 
-#import <UIKit/UIKit.h>
 
 @interface CYViewController : UIViewController
 
 /*
- *是否需要侧滑返回手势  default is YES
+ * default is YES
  */
 @property (nonatomic,assign,getter=isNeedGesture) BOOL needGesture;
 
 /*
- *强制横屏还是强制竖屏
+ * 是否需要强制LandscapeRight
  */
 @property (nonatomic,assign) BOOL shouldRotateToLandscapeRight;
+
+@property (assign,nonatomic) BOOL navBarHidden;
+ 
 @end

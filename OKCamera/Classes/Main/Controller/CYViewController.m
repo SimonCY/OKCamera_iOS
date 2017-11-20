@@ -77,7 +77,7 @@
 }
 
 #pragma mark - public
-
+ 
 - (void)setShouldRotateToLandscapeRight:(BOOL)shouldRotateToLandscapeRight {
     
     _shouldRotateToLandscapeRight = shouldRotateToLandscapeRight;

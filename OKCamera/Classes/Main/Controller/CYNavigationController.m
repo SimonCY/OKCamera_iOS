@@ -14,7 +14,7 @@
 #import "CYViewController.h"
 
 
-@interface CYNavigationController ()<UIGestureRecognizerDelegate>
+@interface CYNavigationController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
 @end
 
@@ -24,6 +24,7 @@
     [super viewDidLoad];
     
     self.interactivePopGestureRecognizer.delegate = self;
+    self.delegate = self;
  
 //    self.navigationBar.prefersLargeTitles = NO;
 //    self.navigationItem.largeTitleDisplayMode = UINavigationItemLargeTitleDisplayModeAutomatic;
@@ -107,16 +108,31 @@
 }
 
 #pragma mark Click events
+
 - (void)back {
     
     [self popViewControllerAnimated:YES];
 }
 
 #pragma mark ---gestureRecognizerDelegate
+
 - (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     
-    return ((self.childViewControllers.count > 1) && [(CYViewController *)self.topViewController isNeedGesture]);
+    return ((self.childViewControllers.count > 1) && [self.topViewController isKindOfClass:[CYViewController class]] && [(CYViewController *)self.topViewController isNeedGesture]);
 }
 
+#pragma mark - navigationDelegate
 
+- (void)navigationController:(UINavigationController *)navigationController willShowViewController:(UIViewController *)viewController animated:(BOOL)animated {
+
+    if ([self.topViewController isKindOfClass:[CYViewController class]] && ((CYViewController *)self.topViewController).navBarHidden) {
+
+        [self setNavigationBarHidden:YES animated:YES];
+    } else {
+
+        [self setNavigationBarHidden:NO animated:YES];
+    }
+}
+
+ 
 @end

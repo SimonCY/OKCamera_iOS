@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E6D1F88CF15D4DF9FB11B45 /* libPods-OKCameraUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3310E38CEC0C14BC9C9485FA /* libPods-OKCameraUITests.a */; };
+		B63858BD1FBDDB6E0006705A /* CYImageEditorToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = B63858BC1FBDDB6E0006705A /* CYImageEditorToolBar.m */; };
 		B66EE89C1F65106B00E5A34C /* CYImageEditorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */; };
 		B66EE89F1F6512CE00E5A34C /* CYImageEditor.m in Sources */ = {isa = PBXBuildFile; fileRef = B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */; };
 		B66EE8A11F65175800E5A34C /* testImg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B66EE8A01F65175800E5A34C /* testImg.jpg */; };
@@ -158,6 +159,8 @@
 		652631459D9675D6245F005B /* Pods-OKCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCamera.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCamera/Pods-OKCamera.release.xcconfig"; sourceTree = "<group>"; };
 		950FCE464518473365918A24 /* Pods-OKCameraUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OKCameraUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-OKCameraUITests/Pods-OKCameraUITests.release.xcconfig"; sourceTree = "<group>"; };
 		ADD776553A4C1FB6718FB7E1 /* libPods-OKCameraTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-OKCameraTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63858BB1FBDDB6E0006705A /* CYImageEditorToolBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYImageEditorToolBar.h; sourceTree = "<group>"; };
+		B63858BC1FBDDB6E0006705A /* CYImageEditorToolBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorToolBar.m; sourceTree = "<group>"; };
 		B66EE89A1F65106B00E5A34C /* CYImageEditorImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditorImage.h; sourceTree = "<group>"; };
 		B66EE89B1F65106B00E5A34C /* CYImageEditorImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CYImageEditorImage.m; sourceTree = "<group>"; };
 		B66EE89D1F6512CE00E5A34C /* CYImageEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CYImageEditor.h; sourceTree = "<group>"; };
@@ -469,6 +472,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B63858BA1FBDDB340006705A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B63858BB1FBDDB6E0006705A /* CYImageEditorToolBar.h */,
+				B63858BC1FBDDB6E0006705A /* CYImageEditorToolBar.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B66EE8921F650E6800E5A34C /* CYImageEditor */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +488,7 @@
 				B66EE89E1F6512CE00E5A34C /* CYImageEditor.m */,
 				B66EE8971F650FFE00E5A34C /* Model */,
 				B66EE8981F650FFE00E5A34C /* Tool */,
+				B63858BA1FBDDB340006705A /* View */,
 				B66EE8991F650FFE00E5A34C /* ViewController */,
 			);
 			path = CYImageEditor;
@@ -1087,7 +1100,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = CY;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = Chenyan;
 				TargetAttributes = {
 					B6F6B4461F3E19D400513BBF = {
@@ -1382,6 +1395,7 @@
 				B6E2FF001F54746B00CBC8EC /* YYTextEffectWindow.m in Sources */,
 				B6E2FEF21F54746B00CBC8EC /* UIButton+YYWebImage.m in Sources */,
 				B6E2FEF31F54746B00CBC8EC /* UIImageView+YYWebImage.m in Sources */,
+				B63858BD1FBDDB6E0006705A /* CYImageEditorToolBar.m in Sources */,
 				B6E2FED31F54746B00CBC8EC /* NSNotificationCenter+YYAdd.m in Sources */,
 				B6E2FEF41F54746B00CBC8EC /* YYAnimatedImageView.m in Sources */,
 				B6EBDE671F3F5E5C003A2F0D /* NSString+CYExtension.m in Sources */,
@@ -1457,7 +1471,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1465,7 +1481,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -1505,7 +1525,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -1513,7 +1535,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

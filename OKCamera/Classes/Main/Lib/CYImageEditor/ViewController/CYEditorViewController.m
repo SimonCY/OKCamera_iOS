@@ -7,31 +7,86 @@
 //
 
 #import "CYEditorViewController.h"
+#import "CYImageEditorToolBar.h"
 
-@interface CYEditorViewController ()
+@interface CYEditorViewController ()<UIScrollViewDelegate>
+
+@property (strong,nonatomic) CYImageEditorImage *image;
+
+@property (strong,nonatomic) UIScrollView *scrollView;
+
+@property (strong,nonatomic) UIImageView *imageView;
+
+@property (nonatomic, strong) UIImageView *targetImageView;
+
+@property (strong,nonatomic) CYImageEditorToolBar *toolBar;
 
 @end
 
 @implementation CYEditorViewController
 
+#pragma mark - system
+
+- (void)dealloc {
+
+
+}
+
+- (instancetype)initWithImage:(UIImage *)image {
+    if (self = [super init]) {
+
+        _image = [[CYImageEditorImage alloc] initWithImage:image];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    //scrollView
+    self.scrollView = [[UIScrollView alloc] init];
+    self.scrollView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
+    self.scrollView.showsHorizontalScrollIndicator = NO;
+    self.scrollView.showsVerticalScrollIndicator = NO;
+    self.scrollView.delegate = self;
+    self.scrollView.clipsToBounds = NO;
+    [self.view addSubview:self.scrollView];
+
+
+    //test code
+    self.scrollView.backgroundColor = [UIColor redColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+
+    CGFloat scrollViewX = 0;
+    self.scrollView.frame = self.view.bounds;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - public
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+#pragma mark - pravite
+
+- (void)resetImageView {
+
+    self.imageView.image = self.image.originalImage;
 }
-*/
 
+- (void)resetZoomScaleWithAnimated:(BOOL)animated {
+
+    
+}
+
+#pragma mark - scrollViewDelegate
+
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView {
+
+
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+
+
+}
 @end
