@@ -32,6 +32,9 @@
 
     [self setupNav];
     [self setupUI];
+
+//    self.navBarHidden = YES;
+//    self.statusBarHidden = YES;
 }
 
 - (void)setupNav {

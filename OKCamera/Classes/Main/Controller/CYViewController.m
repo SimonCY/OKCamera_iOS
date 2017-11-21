@@ -8,6 +8,7 @@
 
 #import "CYViewController.h"
 #import "AppDelegate.h"
+#import "iPhoneMacro.h"
 
 @interface CYViewController ()
 
@@ -73,6 +74,34 @@
     //    } else {
     //        // Fallback on earlier versions
     //    }
+
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+
+    if (!cy_isiPhoneX && self.statusBarHidden) {
+
+        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    }
+}
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+
+    if (!cy_isiPhoneX && self.statusBarHidden) {
+
+        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+
 
 }
 

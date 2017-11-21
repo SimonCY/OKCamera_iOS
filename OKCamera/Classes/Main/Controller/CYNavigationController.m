@@ -133,6 +133,5 @@
         [self setNavigationBarHidden:NO animated:YES];
     }
 }
-
  
 @end

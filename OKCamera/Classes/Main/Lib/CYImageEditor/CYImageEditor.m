@@ -26,23 +26,7 @@
 
     self.view.backgroundColor = CommonWhite;
     self.navBarHidden = YES;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-
-    if (!cy_isiPhoneX) {
-        
-        [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
-    }
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-
-    if (!cy_isiPhoneX) {
-        [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
-    }
+    self.statusBarHidden = YES;
 }
 
 #pragma mark - public

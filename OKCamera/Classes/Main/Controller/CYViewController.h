@@ -22,5 +22,7 @@
 @property (nonatomic,assign) BOOL shouldRotateToLandscapeRight;
 
 @property (assign,nonatomic) BOOL navBarHidden;
+
+@property (assign,nonatomic) BOOL statusBarHidden;
  
 @end
